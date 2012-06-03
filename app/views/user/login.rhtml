@@ -1,0 +1,7 @@
+<h1>Login</h1><br />
+	
+<% form_tag(:method => "post") do %>
+  eMail: <%= text_field_tag(:email) %>	<br />
+  Passwort: <%= password_field_tag(:pass ) %>	<br />
+  <%= submit_tag("Suchen") %>
+<% end %>
