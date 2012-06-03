@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LQPP: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body>
+  <div id="wrap">
+    <p style="color: green"><%= flash[:notice] %></p>
+    <%= yield %>
+  </div>
+</body>
+</html>

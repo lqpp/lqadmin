@@ -3,7 +3,7 @@ class UserController < ApplicationController
     if params[:email]
       user = User.authenticate(params[:email],params[:pass])
       if user.nil? then
-        @error = "Menutzername oder Passowrd falsch";
+        @error = "Benutzername oder Passowrd falsch";
       else
         redirect_to :controller => "home", :action => "index" 
       end
