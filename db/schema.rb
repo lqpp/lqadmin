@@ -23,18 +23,18 @@ ActiveRecord::Schema.define(:version => 20120603154240) do
 
   create_table "permissions", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "instance_id"
-    t.boolean  "search_fulltext_yesno"
-    t.boolean  "search_fulltext_username"
-    t.boolean  "search_fulltext_userid"
-    t.boolean  "search_fulltext_fulldetails"
-    t.boolean  "check_invite_status"
-    t.boolean  "check_invite_username"
-    t.boolean  "check_invite_userid"
-    t.boolean  "invitecode_sendusermail"
-    t.boolean  "username_sendfreetextemail"
-    t.boolean  "invitecode_disable"
-    t.boolean  "invitecode_create"
+    t.integer  "instants_id"
+    t.boolean  "search_fulltext_yesno",       :default => false
+    t.boolean  "search_fulltext_username",    :default => false
+    t.boolean  "search_fulltext_userid",      :default => false
+    t.boolean  "search_fulltext_fulldetails", :default => false
+    t.boolean  "check_invite_status",         :default => false
+    t.boolean  "check_invite_username",       :default => false
+    t.boolean  "check_invite_userid",         :default => false
+    t.boolean  "invitecode_sendusermail",     :default => false
+    t.boolean  "username_sendfreetextemail",  :default => false
+    t.boolean  "invitecode_disable",          :default => false
+    t.boolean  "invitecode_create",           :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
