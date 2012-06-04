@@ -1,0 +1,6 @@
+Instantzen mit Rechten:
+<lu>
+	<% @instants.each do |i| %>
+	<li><%= i.title %> - <%=link_to "Suche Invent", :action => "by_invite", :id => i.id %></li>
+	<% end%>
+</lu>

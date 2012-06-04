@@ -8,7 +8,14 @@
 </head>
 <body>
   <div id="wrap">
+  	<h1><%=@titel%></h1>
     <p style="color: green"><%= flash[:notice] %></p>
+	<% if flash[:error] then%>
+	<div style="background: #af0000; color: #ffffff; padding: 20px; text-align: center; font-weight: bold">
+		<%= flash[:error]%>
+	</div>	
+	<br />
+	<% end%>
     <%= yield %>
   </div>
 </body>
