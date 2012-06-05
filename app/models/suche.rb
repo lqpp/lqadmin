@@ -17,12 +17,21 @@ class Suche
   end
   
   def fulltext (text)
-    return []
+    if text != "false" then
+      out = []
+      out << {:username => "Username 1", :userid => 1, :email => "test_1@mail.de"}
+      out << {:username => "Username 2", :userid => 2, :email => "test_2@mail.de"}
+      out << {:username => "Username 3", :userid => 3, :email => "test_3@mail.de"}
+      
+     return out
+    else
+      return nil
+    end
   end
   
   def invite (code)
     if code != "false" then
-     return {:status => "used", :username => "Username", :userid => 1}
+     return {:status => "used", :username => "Username", :userid => 1, :email => "test@mail.de"}
     else
       return nil
     end

@@ -1,6 +1,9 @@
 Instantzen mit Rechten:
 <lu>
 	<% @instants.each do |i| %>
-	<li><%= i.title %> - <%=link_to "Suche Invent", :action => "by_invite", :id => i.id %></li>
+	<li>
+		<%= i.title %> - 
+		<%=link_to "Suche Invent-Code", :action => "invite", :id => i.id %> - 
+		<%=link_to "Volltext Suche", :action => "fulltext", :id => i.id %></li>
 	<% end%>
 </lu>

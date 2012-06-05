@@ -11,4 +11,9 @@ class UserController < ApplicationController
       end
     end
   end
+  
+  def logout
+    reset_session
+    redirect_to :action => "login"
+  end
 end
