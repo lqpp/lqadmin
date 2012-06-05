@@ -1,0 +1,29 @@
+<p style="text-align: right"><%=link_to "Zurück", :action => "index" %></p>
+
+<% form_tag("?", :method => "post") do %>
+	Suchtext:<%= text_field_tag(:such) %>
+	<%= submit_tag("Suchen") %>
+<% end %>
+
+<% if @show then%>
+	<table border="1">
+		<tr>
+			<th>Username</th>
+			<th>Userid</th>
+			<th>Dateils</th>
+		</tr>
+		<% @show.each do |r| %>	
+		<tr>
+			<td><%= r[:username]%></td>
+			<td><%= link_to r[:userid], ""%></td>
+			<td><% if r[:fulldetails] then%>
+				<table>
+					<% r[:fulldetails].each do |f| %>
+						<tr><td style="text-align: right"><%= f[0] %>:</td><td><%= f[1] %></td></tr>
+					<% end %>
+				</table>
+			<% end %></td>
+		</tr>		
+		<% end %>
+	</table>
+<% end %>
