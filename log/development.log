@@ -13324,3 +13324,2808 @@ Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-05 21:27:37) [POST
 Rendering template within layouts/application
 Rendering suche/fulltext
 Completed in 21ms (View: 1, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2012-06-05 21:55:24) [GET]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/home]
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2012-06-05 21:56:09) [GET]
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2012-06-05 21:56:11) [GET]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2012-06-05 21:56:20) [GET]
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/home]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#index (for 127.0.0.1 at 2012-06-06 22:35:50) [GET]
+Redirected to http://127.0.0.1:3000/user/login
+Filter chain halted as [:fetch_logged_user] rendered_or_redirected.
+Completed in 14ms (DB: 1) | 302 Found [http://127.0.0.1/suche]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2012-06-06 22:35:50) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 44ms (View: 43, DB: 1) | 200 OK [http://127.0.0.1/user/login]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2012-06-06 22:35:52) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "pass"=>"Pass001", "email"=>"mario9000@online.de"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`pass` = 'cad7373147b78bd37674848e99965699' AND `users`.`email` = 'mario9000@online.de') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/home
+Completed in 26ms (DB: 2) | 302 Found [http://127.0.0.1/user/login?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2012-06-06 22:35:52) [GET]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 18, DB: 3) | 200 OK [http://127.0.0.1/home]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#index (for 127.0.0.1 at 2012-06-06 22:35:53) [GET]
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Load (0.8ms)[0m   [0;1mselect * from instants, (select instants_id as id from permissions where user_id = 1 ) as perm where instants.id = perm.id[0m
+Rendering template within layouts/application
+Rendering suche/index
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+Completed in 75ms (View: 28, DB: 5) | 200 OK [http://127.0.0.1/suche]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:35:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.4ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.5ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 28ms (View: 7, DB: 5) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:35:58) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"debug"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.5ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 22ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:36:02) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"false"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 19ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:36:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 26ms (View: 3, DB: 7) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:36:05) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"asd"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (12.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.6ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.5ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+PG::Error (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  app/models/suche.rb:29:in `initialize'
+  app/models/suche.rb:29:in `open'
+  app/models/suche.rb:29:in `fulltext'
+  app/controllers/suche_controller.rb:83:in `fulltext'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (15.1ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-06-06 22:36:05) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  /usr/lib/ruby/1.8/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:441:in `recognize'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:436:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:43:25) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.4ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+PG::Error (FEHLER:  Syntaxfehler bei »pub_mail«
+LINE 1: ...ame ,active, last_login, name, realname, email ad pub_mail, ...
+                                                             ^
+):
+  app/models/suche.rb:31:in `exec'
+  app/models/suche.rb:31:in `fulltext'
+  app/controllers/suche_controller.rb:83:in `fulltext'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (15.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:43:35) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.4ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 23ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:43:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.1ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 20ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:44:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 25ms (View: 3, DB: 5) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:44:22) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 34ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:44:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.1ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 23ms (View: 3, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:44:31) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.4ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 63ms (View: 4, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:45:11) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 29ms (View: 4, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:47:38) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.7ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 28ms (View: 4, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:48:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.1ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 61ms (View: 7, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#index (for 127.0.0.1 at 2012-06-06 22:48:19) [GET]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Load (0.6ms)[0m   [0;1mselect * from instants, (select instants_id as id from permissions where user_id = 1 ) as perm where instants.id = perm.id[0m
+Rendering template within layouts/application
+Rendering suche/index
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+Completed in 15ms (View: 3, DB: 3) | 200 OK [http://127.0.0.1/suche]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 22:48:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 85ms (View: 68, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 22:48:22) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"d"}
+  [4;36;1mUser Columns (6.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (3.5ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 44ms (View: 3, DB: 23) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#index (for 127.0.0.1 at 2012-06-06 22:48:24) [GET]
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Load (0.6ms)[0m   [0;1mselect * from instants, (select instants_id as id from permissions where user_id = 1 ) as perm where instants.id = perm.id[0m
+Rendering template within layouts/application
+Rendering suche/index
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+Completed in 17ms (View: 3, DB: 3) | 200 OK [http://127.0.0.1/suche]
+  [4;36;1mPermission Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:48:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 20ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:48:29) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"debug"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 19ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:48:33) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"us"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.7ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 59ms (View: 4, DB: 5) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:48:35) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"asdsdf"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 26ms (View: 2, DB: 5) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:48:59) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"asd"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 33ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:48:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.2ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 24ms (View: 3, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:49:01) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"sdfsdf"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 23ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:49:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.6ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 20ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:49:22) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"false"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 19ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:49:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.1ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 22ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:49:23) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"asd"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.1ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 24ms (DB: 3) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:49:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 19ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:49:25) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (1.1ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 27ms (View: 3, DB: 5) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:49:28) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"debug"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.2ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 54ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:50:15) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (9.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.2ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 37ms (View: 3, DB: 12) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:50:17) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 27ms (View: 3, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:50:57) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.1ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.2ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+
+ArgumentError (wrong number of arguments):
+  app/controllers/suche_controller.rb:79:in `count'
+  app/controllers/suche_controller.rb:79:in `fulltext'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (13.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:52:54) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 19ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:52:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.6ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 20ms (View: 1, DB: 5) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:52:57) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"asd"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 21ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:52:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.1ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.2ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 20ms (View: 2, DB: 5) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:52:59) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"s"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (10.1ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (1.1ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.6ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 32ms (DB: 15) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:52:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 67ms (View: 44, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:02) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.5ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 19ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:10) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.1ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.2ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 18ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (1.0ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 57ms (View: 3, DB: 5) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:12) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 29ms (View: 4, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:21) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 20ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 24ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:23) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"asd"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 22ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 20ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:24) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 18ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 50ms (View: 1, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:26) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 18ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 21ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.8ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (7.6ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 69ms (View: 2, DB: 14) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:29) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (5.5ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 69ms (DB: 9) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.5ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.2ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 36ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:30) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (1.0ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (4.0ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 36ms (DB: 12) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.5ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 20ms (View: 1, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:53:32) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.6ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 60ms (View: 3, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 22:54:20) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 32ms (View: 6, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:11:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.1ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.1ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 38ms (View: 9, DB: 3) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:11:33) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"aa"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+ArgumentError (invalid tuple number 0):
+  app/models/suche.rb:59:in `getvalue'
+  app/models/suche.rb:59:in `invite'
+  app/controllers/suche_controller.rb:37:in `invite'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (48.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:12:08) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"aa"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.4ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/invite/1
+Completed in 26ms (DB: 4) | 302 Found [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:12:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (1.1ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 26ms (View: 2, DB: 5) | 200 OK [http://127.0.0.1/suche/invite/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:12:12) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.1ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.5ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 29ms (View: 2, DB: 5) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:12:43) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.1ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+TypeError (can't convert String into Integer):
+  app/controllers/suche_controller.rb:49:in `[]'
+  app/controllers/suche_controller.rb:49:in `invite'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (12.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:13:06) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (11.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (1.1ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+TypeError (can't convert String into Integer):
+  app/controllers/suche_controller.rb:49:in `[]'
+  app/controllers/suche_controller.rb:49:in `invite'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (12.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-06-06 23:13:07) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  /usr/lib/ruby/1.8/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:441:in `recognize'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:436:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:14:11) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+TypeError (can't convert String into Integer):
+  app/models/suche.rb:66:in `[]='
+  app/models/suche.rb:66:in `invite'
+  app/controllers/suche_controller.rb:37:in `invite'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (12.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-06-06 23:14:11) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  /usr/lib/ruby/1.8/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:441:in `recognize'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:436:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:15:18) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.4ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.6ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+TypeError (can't convert String into Integer):
+  app/controllers/suche_controller.rb:49:in `[]'
+  app/controllers/suche_controller.rb:49:in `invite'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (12.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-06-06 23:15:18) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  /usr/lib/ruby/1.8/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:441:in `recognize'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:436:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:15:32) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+TypeError (can't convert String into Integer):
+  app/controllers/suche_controller.rb:49:in `[]'
+  app/controllers/suche_controller.rb:49:in `invite'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (12.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-06-06 23:15:32) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  /usr/lib/ruby/1.8/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:441:in `recognize'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:436:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:16:28) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+TypeError (can't convert String into Integer):
+  app/controllers/suche_controller.rb:49:in `[]'
+  app/controllers/suche_controller.rb:49:in `invite'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (12.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-06-06 23:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  /usr/lib/ruby/1.8/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:441:in `recognize'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:436:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:16:29) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+
+TypeError (can't convert String into Integer):
+  app/controllers/suche_controller.rb:49:in `[]'
+  app/controllers/suche_controller.rb:49:in `invite'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (12.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-06-06 23:16:29) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+  /usr/lib/ruby/1.8/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:441:in `recognize'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:436:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:00) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 26ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:03) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test2"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 26ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:06) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"asdfsf"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (1.1ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/invite/1
+Completed in 60ms (DB: 5) | 302 Found [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 24ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:14) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 27ms (View: 1, DB: 3) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:27) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"sdf"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.1ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/invite/1
+Completed in 24ms (DB: 3) | 302 Found [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 60ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:30) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 23ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:34) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 26ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:37) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"ad"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.7ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/invite/1
+Completed in 61ms (DB: 4) | 302 Found [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:17:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 21ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1]
+  [4;36;1mSQL (56.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:40:24) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 23ms (View: 2, DB: 60) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:40:28) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test2"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 24ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:40:30) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"asd"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.4ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/invite/1
+Completed in 59ms (DB: 4) | 302 Found [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:40:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 38ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/invite/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:40:33) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.8ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 26ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:40:43) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test2"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 128ms (View: 2, DB: 6) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:41:01) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 29ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:42:16) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test2"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 24ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:42:29) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/invite/1
+Completed in 25ms (DB: 4) | 302 Found [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:42:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.5ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 21ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:42:31) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test2"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.4ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.5ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 25ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:42:35) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.3ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 24ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#index (for 127.0.0.1 at 2012-06-06 23:42:42) [GET]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Load (0.4ms)[0m   [0;1mselect * from instants, (select instants_id as id from permissions where user_id = 1 ) as perm where instants.id = perm.id[0m
+Rendering template within layouts/application
+Rendering suche/index
+  [4;35;1mInstants Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+Completed in 49ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/suche]
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:42:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 21ms (View: 5, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:42:45) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 54ms (View: 18, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:42:53) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user2"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 59ms (View: 4, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:02) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"#"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 20ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.2ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 19ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:06) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"   #"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.1ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.5ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 16ms (DB: 3) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (26.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 54ms (View: 2, DB: 30) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:09) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"    "}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 22ms (DB: 3) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.4ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 20ms (View: 2, DB: 5) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:14) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"#"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 18ms (DB: 4) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 21ms (View: 3, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:30) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"bU83 @"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/fulltext/1
+Completed in 22ms (DB: 5) | 302 Found [http://127.0.0.1/suche/fulltext/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:43:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.1ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 28ms (View: 2, DB: 10) | 200 OK [http://127.0.0.1/suche/fulltext/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:47:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.2ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 45ms (View: 11, DB: 4) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#fulltext (for 127.0.0.1 at 2012-06-06 23:47:23) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"user"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `instants`[0m
+  [4;35;1mInstants Load (0.2ms)[0m   [0mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;36;1mPermission Load (0.3ms)[0m   [0;1mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;35;1mPermission Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/fulltext
+Completed in 104ms (View: 3, DB: 3) | 200 OK [http://127.0.0.1/suche/fulltext/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#index (for 127.0.0.1 at 2012-06-06 23:47:26) [GET]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mselect * from instants, (select instants_id as id from permissions where user_id = 1 ) as perm where instants.id = perm.id[0m
+Rendering template within layouts/application
+Rendering suche/index
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+Completed in 47ms (View: 7, DB: 2) | 200 OK [http://127.0.0.1/suche]
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:47:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 22ms (View: 4, DB: 5) | 200 OK [http://127.0.0.1/suche/invite/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:47:28) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>""}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.5ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Redirected to http://127.0.0.1:3000/suche/invite/1
+Completed in 21ms (DB: 4) | 302 Found [http://127.0.0.1/suche/invite/1?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:47:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.3ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.4ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 55ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/invite/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:47:30) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.2ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.3ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 25ms (View: 2, DB: 3) | 200 OK [http://127.0.0.1/suche/invite/1?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SucheController#invite (for 127.0.0.1 at 2012-06-06 23:47:33) [POST]
+  Parameters: {"commit"=>"Suchen", "authenticity_token"=>"0nb+joQHWS8jN3PRBv7kZKdhwacS084T1364gsK/SOs=", "id"=>"1", "such"=>"test2"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mInstants Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `instants`[0m
+  [4;36;1mInstants Load (0.5ms)[0m   [0;1mSELECT * FROM `instants` WHERE (`instants`.`id` = 1) [0m
+  [4;35;1mPermission Load (0.5ms)[0m   [0mselect * from permissions where user_id = 1 AND instants_id = 1[0m
+  [4;36;1mPermission Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `permissions`[0m
+Rendering template within layouts/application
+Rendering suche/invite
+Completed in 25ms (View: 1, DB: 4) | 200 OK [http://127.0.0.1/suche/invite/1?]

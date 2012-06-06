@@ -36,7 +36,7 @@ class SucheController < ApplicationController
       else
         result = suche.invite params["such"]
         
-        if result.nil? then
+        if not result then
           flash[:notice] = "Den Invite-Code gibt es nicht :("
           redirect_to 
         else
@@ -46,13 +46,13 @@ class SucheController < ApplicationController
           @show = {}
         
           if permission.check_invite_status then
-            @show[:status] = result[:status]
+            @show[:status] = result["status"]
           end        
           if permission.check_invite_username then
-            @show[:username] = result[:username]
+            @show[:username] = result["username"]
           end        
           if permission.check_invite_userid then
-            @show[:userid] = result[:userid]
+            @show[:userid] = result["userid"]
           end
           
         end
@@ -76,18 +76,18 @@ class SucheController < ApplicationController
     if params["such"] then
       reg = /^[a-zA-Z0-9@\s.,-]*$/
     
-      if not reg.match(params["such"]) then
+      if not reg.match(params["such"]) or params["such"].length < 4 then
         flash[:error] = "Der Suchbegriff entspricht nicht den Richtlienien"
         redirect_to
       else
         result = suche.fulltext params["such"]
         
-        if result.nil? then
+        if result.count == 0 then
           flash[:notice] = "Es gibt keine Treffer"
           redirect_to 
         else
-          if result.count > 10 then
-            flash[:error] = "Die Trefferliste ist auf 10 begrenzt!"
+          if result.count > 50 then
+            flash[:error] = "Die Trefferliste ist auf 50 begrenzt!"
             redirect_to
           else  
             
@@ -99,10 +99,10 @@ class SucheController < ApplicationController
             result.each do |r|
               out = {}
               if permission.search_fulltext_username then
-                out[:username] = r[:username]
+                out[:username] = r["username"]
               end        
               if permission.search_fulltext_userid then
-                out[:userid] = r[:userid]
+                out[:userid] = r["userid"]
               end   
               if permission.search_fulltext_fulldetails then
                 out[:fulldetails] = r

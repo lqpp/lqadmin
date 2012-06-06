@@ -19,7 +19,9 @@
 			<td><% if r[:fulldetails] then%>
 				<table>
 					<% r[:fulldetails].each do |f| %>
-						<tr><td style="text-align: right"><%= f[0] %>:</td><td><%= f[1] %></td></tr>
+						<% if f[1] %>
+							<tr><td style="text-align: right"><%= f[0] %>:</td><td><%= f[1] %></td></tr>
+						<% end %>
 					<% end %>
 				</table>
 			<% end %></td>
