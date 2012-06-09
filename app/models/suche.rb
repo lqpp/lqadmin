@@ -21,7 +21,7 @@ class Suche
     conn = PGconn.open(:dbname => @instants.dbname)    
           
     return conn.exec(
-"SELECT id as userid, login as username ,active, last_login, name, realname, email as pub_mail, notify_email as email FROM member where
+"SELECT id as userid, login as username ,active, last_login, name, realname, email as pub_mail, notify_email as email, notify_email_unconfirmed FROM member where
 login ~* '#{text}' OR
 notify_email ~* '#{text}' OR
 notify_email_unconfirmed ~* '#{text}' OR
