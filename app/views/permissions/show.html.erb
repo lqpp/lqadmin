@@ -1,0 +1,13 @@
+<table border="1">
+	<tr><td>Email</td><td><%= @permission.user.email %></td></tr>
+	<tr><td>Instants</td><td><%= @permission.instants.title %></td></tr>
+	<tr><td colspan="2"></tr>
+	<% @permission.attributes.each do |f| %>
+		<% if not ["created_at","updated_at","id","user_id","instants_id"].include? f[0]%>
+			<tr><td><%= f[0] %></td><td><%= f[1] %></td></tr>
+		<% end %>
+	<% end %>
+</table>
+
+<%= link_to 'Edit', edit_permission_path(@permission) %> |
+<%= link_to 'Back', permissions_path %>

@@ -1,0 +1,23 @@
+<h1>New instant</h1>
+
+<% form_for(@instants) do |f| %>
+  <%= f.error_messages %>
+
+<table>
+  	<% @instants.attributes.each do |a| %>
+  		<% if a[0] != "created_at" && a[0] != "updated_at"%>
+			<tr>
+				<td style="text-align: right"><%= a[0] %>:</td>
+				<td><%= f.text_field a[0] %></td>
+			</tr>
+		<% end %>
+	<% end %>
+  </table>
+
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', instants_path %>

@@ -1,0 +1,23 @@
+<h1>Listing instants</h1>
+
+<table>
+  <tr>
+  	<th>Name</th>
+  	<th>DB-Name</th>
+  	<th colspan="3" style="text-align: center">Aktion</th>
+  </tr>
+
+<% @instants.each do |instants| %>
+  <tr>
+  	<td><%= instants.title %></td>
+  	<td><%= instants.dbname %></td>
+    <td><%= link_to 'Show', instants %></td>
+    <td><%= link_to 'Edit', edit_instant_path(instants) %></td>
+    <td><%= link_to 'Destroy', instants, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New instant', new_instant_path %>

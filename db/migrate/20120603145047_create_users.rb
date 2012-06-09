@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :pass
       t.string :sig
       t.string :note
+      t.boolean :admin , :defautl => false
 
       t.timestamps
     end

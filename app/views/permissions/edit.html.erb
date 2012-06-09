@@ -1,0 +1,24 @@
+<h1>Editing permission</h1>
+
+<% form_for(@permission) do |f| %>
+  <%= f.error_messages %>
+
+	<table>
+  	<% @permission.attributes.each do |a| %>
+  		<% if not ["created_at","updated_at","id","user_id","instants_id"].include? a[0]%>
+			<tr>
+				<td style="text-align: right"><%= a[0] %>:</td>
+				<td><%= f.check_box a[0] %></td>
+			</tr>
+		<% end %>
+	<% end %>
+  </table>
+
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @permission %> |
+<%= link_to 'Back', permissions_path %>

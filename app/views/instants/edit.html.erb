@@ -1,0 +1,23 @@
+<h1>Editing instants</h1>
+
+<% form_for(@instants) do |f| %>
+  <%= f.error_messages %>
+
+  <table>
+  	<% @instants.attributes.each do |a| %>
+  		<% if not ["created_at","updated_at","id"].include? a[0]%>
+			<tr>
+				<td style="text-align: right"><%= a[0] %>:</td>
+				<td><%= f.text_field a[0] %></td>
+			</tr>
+		<% end %>
+	<% end %>
+  </table>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @instants %> |
+<%= link_to 'Back', instants_path %>

@@ -1,0 +1,23 @@
+<h1>Listing permissions</h1>
+
+<table border="1">
+  <tr>
+  	<th>User</th>
+  	<th>DB-Name</th>
+  	<th colspan="3" style="text-align: center">Aktion</th>
+  </tr>
+
+<% @permissions.each do |permission| %>
+  <tr>
+  	<td><%= permission.user.email %></td>
+  	<td><%= permission.instants.title %></td>
+    <td><%= link_to 'Show', permission %></td>
+    <td><%= link_to 'Edit', edit_permission_path(permission) %></td>
+    <td><%= link_to 'Destroy', permission, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New permission', new_permission_path %>
