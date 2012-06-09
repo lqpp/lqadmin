@@ -3,7 +3,7 @@ class SucheController < ApplicationController
 
   def fetch_logged_user
     if session[:user_id].blank? then
-      redirect_to :controller => "user", :action => "login"
+      redirect_to :controller => "login", :action => "index"
     else
       @user = User.find(session[:user_id])
     end
