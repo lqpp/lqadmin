@@ -1,10 +1,10 @@
-<h1>New instant</h1>
+<h1>New user</h1>
 
-<% form_for(@instants) do |f| %>
+<% form_for(@user) do |f| %>
   <%= f.error_messages %>
 
   <table>
-  	<% @instants.attributes.each do |a| %>
+  	<% @user.attributes.each do |a| %>
   		<% if a[0] != "created_at" && a[0] != "updated_at"%>
 			<tr>
 				<td style="text-align: right"><%= a[0] %>:</td>
@@ -20,4 +20,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', instants_path %>
+<%= link_to 'Back', users_path %>

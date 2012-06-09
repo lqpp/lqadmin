@@ -3,6 +3,27 @@
 <% form_for(@permission) do |f| %>
   <%= f.error_messages %>
 
+  <table>
+  	<tr>
+  		<td style="text-align: right">User:</td>
+  		<td><%= select ("permission", "user_id", @users.map {|u| [u.email,u.id]}) %></td>
+  	</tr>
+  	<tr>
+  		<td style="text-align: right">Instants:</td>
+  		<td><%= select ("permission", "instants_id", @instants.map {|u| [u.title,u.id]}) %></td>
+  	</tr>
+  	
+  	<% @permission.attributes.each do |a| %>
+  		<% if not ["created_at","updated_at","id","user_id","instants_id"].include? a[0]%>
+			<tr>
+				<td style="text-align: right"><%= a[0] %>:</td>
+				<td><%= f.check_box a[0] %></td>
+			</tr>
+		<% end %>
+	<% end %>
+  </table>
+
+
   <p>
     <%= f.submit 'Create' %>
   </p>

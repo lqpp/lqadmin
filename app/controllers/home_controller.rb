@@ -10,5 +10,6 @@ class HomeController < ApplicationController
   end
   
   def index
+    @titel = "Wilkommen im Admin-Interface von LQFB"
   end
 end

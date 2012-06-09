@@ -41,6 +41,9 @@ class PermissionsController < ApplicationController
   # GET /permissions/new.xml
   def new
     @permission = Permission.new
+    
+    @users    = User.all
+    @instants = Instants.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -56,6 +59,11 @@ class PermissionsController < ApplicationController
   # POST /permissions
   # POST /permissions.xml
   def create
+    if Permission.find_by_sql("select * from permissions where user_id = #{params[:permission][:user_id]} AND instants_id = #{params[:permission][:instants_id]}").count != 0 then
+      flash[:error] = "Die Kompination von disem User und der Instants gib es schon!"
+      redirect_to 
+      return
+    end
     @permission = Permission.new(params[:permission])
 
     respond_to do |format|

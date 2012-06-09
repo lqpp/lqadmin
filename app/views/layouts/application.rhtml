@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <link rel="icon" href="/favicon.png" type="image/png">
   <title>LQPP: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'default' %>
 </head>
 <body>
   <div id="wrap">
   	<h1><%=@titel%></h1>
+  	<div style="position: absolute; right: 0; top: 0"><%= link_to "Home", :controller => "home", :action => "index" %></div>
     <p style="color: green"><%= flash[:notice] %></p>
 	<% if flash[:error] then%>
 	<div style="background: #af0000; color: #ffffff; padding: 20px; text-align: center; font-weight: bold">

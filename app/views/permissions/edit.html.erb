@@ -3,7 +3,7 @@
 <% form_for(@permission) do |f| %>
   <%= f.error_messages %>
 
-	<table>
+  <table>
   	<% @permission.attributes.each do |a| %>
   		<% if not ["created_at","updated_at","id","user_id","instants_id"].include? a[0]%>
 			<tr>

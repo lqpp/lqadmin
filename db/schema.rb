@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20120603154240) do
     t.string   "title"
     t.string   "description"
     t.string   "notes"
+    t.string   "url"
     t.integer  "version"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -44,6 +45,7 @@ ActiveRecord::Schema.define(:version => 20120603154240) do
     t.string   "pass"
     t.string   "sig"
     t.string   "note"
+    t.boolean  "admin"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
