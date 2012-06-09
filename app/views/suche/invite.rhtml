@@ -29,8 +29,8 @@
 	<tr>
 		<td>Aktion:</td>
 		<td>
-			<%= link_to "Send Username", ""%><br />
-			<%= link_to "Send eMail", ""%>
+			<%= link_to "Send Username", :controller => "email", :action => "username", :id => 0 %><br />
+			<%= link_to "Send eMail",  :controller => "email", :action => "freetext", :id => 0%>
 		</td>
 	</tr>
 	</table>

@@ -42,7 +42,8 @@ class SucheController < ApplicationController
         else
           flash[:results]     = [ result ]
           flash[:permission]  = permission
-        
+          flash[:instants]  = @instants
+          
           @show = {}
         
           if permission.check_invite_status then
