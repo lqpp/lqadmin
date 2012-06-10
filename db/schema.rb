@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120603154240) do
+ActiveRecord::Schema.define(:version => 20120610112544) do
 
   create_table "instants", :force => true do |t|
     t.string   "dbname"
@@ -18,6 +18,15 @@ ActiveRecord::Schema.define(:version => 20120603154240) do
     t.string   "notes"
     t.string   "url"
     t.integer  "version"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "logs", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "instants_id"
+    t.string   "action"
+    t.string   "parameters"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

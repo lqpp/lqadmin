@@ -20,6 +20,8 @@ class Suche
     require 'pg'
     conn = PGconn.open(:dbname => @instants.dbname)    
           
+    Log.create(:user_id => @user.id, :instants_id => @instants.id, :action => "search_fulltext", :parameters => text)
+          
     return conn.exec(
 "SELECT id as userid, login as username ,active, last_login, name, realname, email as pub_mail, notify_email as email, notify_email_unconfirmed FROM member where
 login ~* '#{text}' OR
@@ -49,6 +51,8 @@ statement ~* '#{text}'
   def invite (code)
     require 'pg'
     conn = PGconn.open(:dbname => @instants.dbname)    
+    
+    Log.create(:user_id => @user.id, :instants_id => @instants.id, :action => "search_invite", :parameters => code)
     
     if @instants.version == 1 then            
       invite_code = conn.exec("SELECT member_id FROM invite_code where code = '#{code}';")
