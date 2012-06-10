@@ -19,6 +19,7 @@ class UsersController < ApplicationController
   # GET /users.xml
   def index
     @users = User.all
+    @titel = "Alle Beutzer"
 
     respond_to do |format|
       format.html # index.html.erb
@@ -30,6 +31,7 @@ class UsersController < ApplicationController
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
+    @titel = "Beutzerdetails"
 
     respond_to do |format|
       format.html # show.html.erb
@@ -41,7 +43,7 @@ class UsersController < ApplicationController
   # GET /users/new.xml
   def new
     @user = User.new
-
+    @titel = "Neuer Beutzer"
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @user }
@@ -50,6 +52,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    @titel = "Beutzer bearbeiten"
     @user = User.find(params[:id])
   end
 
