@@ -87,13 +87,15 @@ class SucheController < ApplicationController
           flash[:notice] = "Es gibt keine Treffer"
           redirect_to 
         else
-          if result.count > 50 then
-            flash[:error] = "Die Trefferliste ist auf 50 begrenzt!"
+          if result.count > 30 then
+            flash[:error] = "Die Trefferliste ist auf 30 begrenzt!"
             redirect_to
           else  
             
-            flash[:results]     = result
-            flash[:permission]  = permission
+            #flash[:results]     = result
+            #flash[:permission]  = permission
+            #> ActionController::Session::CookieStore::CookieOverflow
+             
           
             @show = []
           
