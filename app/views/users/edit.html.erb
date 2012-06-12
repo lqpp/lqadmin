@@ -1,15 +1,27 @@
 <% form_for(@user) do |f| %>
   <%= f.error_messages %>
 
-	<table>
-  	<% @user.attributes.each do |a| %>
-  		<% if not ["created_at","updated_at","id"].include? a[0]%>
-			<tr>
-				<td style="text-align: right"><%= a[0] %>:</td>
-				<td><%= f.text_field a[0] %></td>
-			</tr>
-		<% end %>
-	<% end %>
+  <table>
+  	<tr>
+  		<td>Email Adresse:</td>
+  		<td><%= f.text_field :email %></td>
+  	</tr>
+  	<tr>
+  		<td>Administrator:</td>
+  		<td><%= f.check_box :admin %></td>
+  	</tr>
+  	<tr>
+  		<td>Signatur:</td>
+  		<td><%= f.text_area :sig, :rows => 5 %></td>
+  	</tr>
+  	<tr>
+  		<td>Notiz</td>
+  		<td><%= f.text_area :note, :rows => 5 %></td>
+  	</tr>
+  	<tr>
+  		<td>Password-Reset:</td>
+  		<td><%= check_box_tag :reset_pass %>Neues Password zusenden</td>
+  	</tr>
   </table>
 
   <p>

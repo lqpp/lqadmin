@@ -7,10 +7,6 @@ class EmailController < ApplicationController
       redirect_to :controller => "login", :action => "index"
     else
       @user = User.find(session[:user_id])
-      if not @user.admin? then
-        flash[:error] = "Sie haben nicht das Recht dafür!"
-        redirect_to :action => "index", :controller => "home"
-      end
     end
   end
   

@@ -2,14 +2,26 @@
   <%= f.error_messages %>
 
   <table>
-  	<% @user.attributes.each do |a| %>
-  		<% if a[0] != "created_at" && a[0] != "updated_at"%>
-			<tr>
-				<td style="text-align: right"><%= a[0] %>:</td>
-				<td><%= f.text_field a[0] %></td>
-			</tr>
-		<% end %>
-	<% end %>
+  	<tr>
+  		<td>Email Adresse:</td>
+  		<td><%= f.text_field :email %></td>
+  	</tr>
+  	<tr>
+  		<td>Administrator:</td>
+  		<td><%= f.check_box :admin %></td>
+  	</tr>
+  	<tr>
+  		<td>Signatur:</td>
+  		<td><%= f.text_area :sig, :rows => 5 %></td>
+  	</tr>
+  	<tr>
+  		<td>Notiz</td>
+  		<td><%= f.text_area :note, :rows => 5 %></td>
+  	</tr>
+  	<tr>
+  		<td>Password:</td>
+  		<td>Der Nutzer erhält eine E-Mail</td>
+  	</tr>
   </table>
 
 

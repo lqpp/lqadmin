@@ -16,6 +16,14 @@ class User < ActiveRecord::Base
       return true
     end
     
+    def reset_pass
+      pass = Digest::SHA1.hexdigest("#{rand(999999999999999)} #{self.email}")
+      self.pass= pass
+      self.save
+      Emailer.deliver_admin_reset(self.email,pass)
+      return true
+    end
+    
     def self.authenticate(email, pass)
       return nil if email.nil? or pass.nil?
       back = find_by_email_and_pass(email,Digest::SHA1.hexdigest(pass))
