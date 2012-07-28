@@ -12,7 +12,11 @@ class SucheController < ApplicationController
   
   def index
     @titel    = "Suche:"
-    @instants = Instants.find_by_sql("select * from instants, (select instants_id as id from permissions where user_id = #{@user.id} ) as perm where instants.id = perm.id")
+    if @user.accessall then
+      @instants = Instants.find_by_sql("select * from instants")
+    else
+      @instants = Instants.find_by_sql("select * from instants, (select instants_id as id from permissions where user_id = #{@user.id} ) as perm where instants.id = perm.id")
+    end
   end
   
   def invite

@@ -20,7 +20,7 @@
 	<% if @show[:userid] then%>
 		<tr>
 			<td>Profiel:</td>
-			<td><%= link_to @show[:userid], "http://lqpp.de/"%></td>
+			<td><%= link_to @show[:userid], @instants.url + "member/show/" + @show[:userid] + ".html"%></td>
 		</tr>
 	<% end %>
 	<tr>

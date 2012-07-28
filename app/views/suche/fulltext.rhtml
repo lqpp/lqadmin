@@ -13,7 +13,7 @@
 		<% @show.each do |r| %>	
 		<tr>
 			<td><%= r[:username]%></td>
-			<td><%= link_to r[:userid], ""%></td>
+			<td><%= link_to r[:userid], @instants.url + "member/show/" + r[:userid] + ".html"%></td>
 			<td><% if r[:fulldetails] then%>
 				<table>
 					<% r[:fulldetails].each do |f| %>
