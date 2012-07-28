@@ -1,9 +1,10 @@
 Instantzen mit Rechten:
-<lu>
+<table>
 	<% @instants.each do |i| %>
-	<li>
-		<%= i.title %> - 
-		<%=link_to "Suche Invent-Code", :action => "invite", :id => i.id %> - 
-		<%=link_to "Volltext Suche", :action => "fulltext", :id => i.id %></li>
+	<tr>
+		<td><%= i.title %></td> 
+		<td><%=link_to "Suche Invent-Code", :action => "invite", :id => i.id %></td> 
+		<td><%=link_to "Volltext Suche", :action => "fulltext", :id => i.id %></td>
+	</tr>
 	<% end%>
-</lu>
+</table>
