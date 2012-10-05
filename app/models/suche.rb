@@ -37,7 +37,7 @@ class Suche
           
     Log.create(:user_id => @user.id, :instants_id => @instants.id, :action => "search_fulltext", :parameters => text)
           
-    return conn.exec(
+    if @instants.version == 1 then return conn.exec(
 "SELECT id as userid, login as username ,active, last_login, name, realname, email as pub_mail, notify_email as email, notify_email_unconfirmed FROM member where
 login ~* '#{text}' OR
 notify_email ~* '#{text}' OR
@@ -60,7 +60,36 @@ external_memberships ~* '#{text}' OR
 external_posts ~* '#{text}' OR
 statement ~* '#{text}'
 ").find_all.to_a
-  end 
+
+  if @instants.version == 2 then return conn.exec(
+"SELECT id as userid, login as username, created, active, admin, notify_email, notify_email_unconfirmed, name, identification, organizational_unit,realname, email, xmpp_address, website, phone, statement, locked, invite_code, admin_comment FROM member where
+login ~* '#{text}' OR
+notify_email  ~* '#{text}' OR
+notify_email_unconfirmed  ~* '#{text}' OR
+notify_email_secret  ~* '#{text}' OR
+password_reset_secret  ~* '#{text}' OR
+name  ~* '#{text}' OR
+identification  ~* '#{text}' OR
+organizational_unit  ~* '#{text}' OR
+internal_posts  ~* '#{text}' OR
+realname  ~* '#{text}' OR
+address  ~* '#{text}' OR
+email  ~* '#{text}' OR
+xmpp_address  ~* '#{text}' OR
+website  ~* '#{text}' OR
+phone  ~* '#{text}' OR
+mobile_phone  ~* '#{text}' OR
+profession  ~* '#{text}' OR
+external_memberships  ~* '#{text}' OR
+external_posts  ~* '#{text}' OR
+statement  ~* '#{text}' OR
+invite_code  ~* '#{text}' OR
+admin_comment  ~* '#{text}' OR
+formatting_engine  ~* '#{text}' OR
+authentication   ~* '#{text}'
+").find_all.to_a
+  
+  end
   
   
   def invite (code)
@@ -74,6 +103,12 @@ statement ~* '#{text}'
       return false if invite_code.count == 0
       return {"status" => "unsed", "username" => false, "userid" => false, "email" => false} if invite_code.getvalue(0,0).nil?
       return conn.exec("SELECT id as userid, login as username ,active as status, notify_email as email FROM member where id = #{invite_code.getvalue(0,0)}").find_all.to_a.first
+    end
+    if @instants.version == 2 then            
+      invite_code = conn.exec("SELECT id as userid, login as username ,active as status, notify_email as email FROM member where invite_code = '#{code}';") 
+      return false if invite_code.count == 0
+      return {"status" => "unsed", "username" => false, "userid" => false, "email" => false} if invite_code.getvalue(0,1).nil?
+      return invite_code.find_all.to_a.first
     end
   end
   
