@@ -60,6 +60,7 @@ external_memberships ~* '#{text}' OR
 external_posts ~* '#{text}' OR
 statement ~* '#{text}'
 ").find_all.to_a
+  end
 
   if @instants.version == 2 then return conn.exec(
 "SELECT id as userid, login as username, created, active, admin, notify_email, notify_email_unconfirmed, name, identification, organizational_unit,realname, email, xmpp_address, website, phone, statement, locked, invite_code, admin_comment FROM member where
@@ -89,6 +90,7 @@ formatting_engine  ~* '#{text}' OR
 authentication   ~* '#{text}'
 ").find_all.to_a
   
+  end
   end
   
   
